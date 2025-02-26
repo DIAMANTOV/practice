@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function task4(num1, num2) {
+            let isNum1Even = false;
+            let isNum2Even = false;
+
+            if(num1 % 2 == 0 ){
+                isNum1Even = true;
+            }
+
+            if(num2 % 2 == 0 ){
+                isNum2Even = true;
+            }
+
+            if (isNum1Even && isNum2Even) {
+                alert(num1*num2);
+            }
+
+            if (!isNum1Even && !isNum2Even) {
+                alert(num1+num2);
+            } 
+
+            if (isNum1Even && !isNum2Even) {
+                alert(num2);
+            } 
+            if (!isNum1Even && isNum2Even) {
+                alert(num1);
+            } 
+        }
+
+        let a = parseFloat(prompt("Enter 1st num"));
+        let b = parseFloat(prompt("Enter 2nd num"));
+
+        task4(a,b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function userCreate(firstName, lastName, age) {
+
+            alert(`Это ${lastName} ${firstName} ему ${age} лет.`);
+
+        }
+
+        let firstName = prompt("Tell me your first name");
+        let lastName = prompt("Tell me your second name");
+        let age = parseFloat(prompt("How old are you?"));
+
+        userCreate(firstName, lastName, age);
+    </script>
+</body>
+</html>

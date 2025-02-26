@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function task2() {
+            let numbers = [];
+
+            for (let index = 0; index < 3; index++) {
+                let number = parseFloat(prompt("Enter number:"));
+                while (isNaN(number)) {
+                    number = parseFloat(prompt("Enter ONLY number:"));
+                }
+                numbers.push(number);
+            }   
+
+            let maxValue = -Infinity;
+            let oneMoreMaxV = -Infinity;
+            let isOneMore = false;
+            for (let index = 0; index < numbers.length; index++) {
+                const element = numbers[index];
+                if (element > maxValue) {
+                    maxValue = element;
+                    isOneMore = false;
+                } else if (element == maxValue){
+                    oneMoreMaxV = element;
+                    isOneMore = true;
+                }
+            }
+
+
+            if (isOneMore){
+                alert(`We have 2 highest values ${maxValue}`)
+            } else{ alert(`The highest value is ${maxValue}`)}
+
+        }
+
+        task2();
+    </script>
+</body>
+</html>

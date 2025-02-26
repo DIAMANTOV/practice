@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function task8(array) {
+            let sum = 0;
+            for (const element of array) {
+                sum += element;
+            }
+            return sum;
+        }
+
+        let arr = [0, 22, 11, 6, 4, 8, 55];
+        const arr1 = [2, 4, 6, 8];
+        const arr2 = [2, 4, 6, 7, 8];
+
+        console.log(task8(arr));
+        console.log(task8(arr1));
+        console.log(task8(arr2));
+
+        
+    </script>
+</body>
+</html>

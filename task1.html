@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function task1() {
+            let number = prompt("Enter your time. Exp: 19/20/8 etc.");
+            let time = parseFloat(number);
+
+            if(!isNaN(time) && time >= 0 && time <= 24){
+                if (time > 17 ) {
+                    alert("Добрый вечер!");
+                } else {
+                    alert("Добрый день");
+                }
+            } else {
+                alert("Enter ONLY number between 0 - 24");
+                task1();
+            }
+        }
+
+
+        
+        task1();
+    </script>
+</body>
+</html>
